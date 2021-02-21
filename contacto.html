@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bienes Raices</title>
+    <!-- Hojas de estilo-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+
+                <div class="nav-mobile">
+                    <a href="#navegacion"><img src="img/barras.svg" alt="Barra"></a>  
+                </div>
+
+                <nav id="navegacion"  class="navegacion">
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contactos</a>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <h1 class="fw-300 centrar-texto">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="Destacado Principal">
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llenar el formulario de contacto</h2>
+
+        <form action="" class="contacto">
+        
+            <fieldset>
+                <legend>Información personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escriba aquí" value="">
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" placeholder="Escriba aquí" value="" required>
+        
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Escriba aquí" value="" required>
+        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"></textarea>
+        
+        
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre propiedad</legend>
+
+                <label for="opciones">Vende o Compra</label>
+                <select  id="opciones">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="">Vende</option>
+                    <option value="">Compra</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" min="0" max="100" step="5" id="cantidad">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>Como desea ser contactado: </p>
+                <div class="forma-contacto">
+                    <label for="telefono">Teléfono</label>
+                    <input type="radio" id="telefono" name="contacto" value="telefono">
+                
+                    <label for="correo">E-mail</label>
+                    <input type="radio" id="correo" name="contacto" value="correo">
+                </div>
+
+                <p>Si eligió Teléfono, elija la y fecha y hora</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora">
+            </fieldset>
+
+        
+            <input type="submit" value="Enviar" class="boton boton-verde">
+
+        
+        </form>
+    </main>
+   
+
+    
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="Nosotros.html" target="_blank">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contactos</a>
+            </nav>
+
+            <p class="copyright">Todos los derechos reservados &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
